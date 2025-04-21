@@ -149,3 +149,19 @@ body {
   opacity:1;
   filter:alpha(opacity=100);
 }
+
+/*
+ * Carousel indicator positioning
+ */
+#carouselIndicators {
+  padding-bottom: 1.5rem;
+}
+
+#carouselIndicators .carousel-indicators {
+  bottom: 0;
+  margin-bottom: 0;
+}
+
+#carouselIndicators .card-body {
+  padding: 0.5rem;
+}
