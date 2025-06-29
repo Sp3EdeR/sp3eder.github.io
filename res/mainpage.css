@@ -6,7 +6,8 @@
 a,
 a:focus,
 a:hover {
-  color: #fff;
+  color: #fff !important;
+  text-decoration: none !important;
 }
 
 /* Custom default button */
