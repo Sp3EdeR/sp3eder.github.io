@@ -4,6 +4,7 @@
   <meta charset="utf-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="color-scheme" content="dark only">
   <meta name="description" content="Autós eszközök gyűjteménye" />
   <meta name="author" content="HU" />
   <!-- Disable resizing the viewport for mobile -->
@@ -31,22 +32,21 @@
 
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" integrity="sha256-+IZRbz1B6ee9mUx/ejmonK+ulIP5A5bLDd6v6NHqXnI=" crossorigin="anonymous" referrerpolicy="no-referrer">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@forevolve/bootstrap-dark@4.0.2/dist/css/bootstrap-dark.min.css" integrity="sha256-uL9g2qjKkmQ5pUUk+9GC9gBsUBuLpMPkYRR1yePUAoE=" crossorigin="anonymous" referrerpolicy="no-referrer">
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@forevolve/bootstrap-dark@4.0.2/dist/css/bootstrap-prefers-light.min.css" integrity="sha256-0vk3JUmXYR/CJWTqEFvyJ0xeMQL6QnNIus3CeuJxuW8=" crossorigin="anonymous" referrerpolicy="no-referrer">
   <script src="https://cdn.jsdelivr.net/npm/jquery@3.7.0/dist/jquery.min.js" integrity="sha256-2Pmvv0kuTBOenSvLm6bvfBSSHrUJ+3A7x6P5Ebd07/g=" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js" integrity="sha256-GRJrh0oydT1CwS36bBeJK/2TggpaUQC6GzTaTQdZm0k=" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 </head>
 <body class="text-center">
-  <div class="cover-container d-flex w-100 h-100 p-3 mx-auto flex-column">
-    <header class="masthead mb-auto">
-      <div class="inner">
-        <h3 class="masthead-brand">Autós Alkalmazások</h3>
-      </div>
+  <div class="cover-container w-100 d-flex mx-auto flex-column" style="position: relative;">
+    <header class="card p-3">
+      <h1>AUTÓS ESZKÖZÖK</h1>
+      Alkalmazások a magyar autós közösségnek, eseménynaptár, szerpentintérkép, fotópontok, és sok más
     </header>
     <main role="main" class="inner cover">
       <a href="autosesemenyek">
         <div class="card mt-3 mb-3">
           <div class="hovereffect">
             <img src="autosesemenyek/res/banner.jpg" class="card-img-top" alt="Autós Események Naptára" />
+            <div class="shadow-overlay"></div>
             <div class="overlay"></div>
           </div>
           <div class="card-body">
@@ -126,11 +126,11 @@
         </div>
       </a>
     </main>
-    <header class="masthead mb-auto">
+    <div class="section mb-auto">
       <div class="inner">
-        <h3 class="masthead-brand">Autós Dokumentumok</h3>
+        <h3 class="section-brand">Autós Dokumentumok</h3>
       </div>
-    </header>
+    </div>
     <main role="main" class="inner cover">
       <div id="carouselIndicators" class="carousel slide mt-3 mb-3" data-ride="carousel">
         <ol class="carousel-indicators">
@@ -184,16 +184,16 @@
         <p>Az alkalmazások vezető fejlesztője: <a href="https://github.com/Sp3EdeR">Speeder</a>.</p>
       </div>
     </footer>
-    <header class="masthead mb-auto">
+    <div class="section mb-auto">
       <div class="inner">
-        <h3 class="masthead-brand">Egyéb Cégek Alkalmazásai</h3>
+        <h3 class="section-brand">Egyéb Cégek Alkalmazásai</h3>
       </div>
-    </header>
+    </div>
     <main role="main" class="inner cover">
       <a href="https://first2.app">
         <div class="card mt-3 mb-3">
           <div class="hovereffect">
-            <img src="https://first2.app/images/og-image.png" class="card-img-top" style="max-height: 320px; object-fit: cover;" alt="FIRST2" />
+            <img src="https://first2.app/images/og-image.png" class="card-img-top" style="max-height: 28em; object-fit: cover;" alt="FIRST2" />
             <div class="overlay"></div>
           </div>
           <div class="card-body">
@@ -205,7 +205,7 @@
       <a href="https://autoorszem.hu/">
         <div class="card mt-3 mb-3">
           <div class="hovereffect">
-            <img src="https://autoorszem.hu/img/ogAutoorszem9.jpg" class="card-img-top" style="background-color: #834C69; max-height: 320px; object-fit: scale-down;" alt="Autóőrszem" />
+            <img src="https://autoorszem.hu/img/ogAutoorszem9.jpg" class="card-img-top" style="background-color: #834C69; max-height: 20em; object-fit: scale-down;" alt="Autóőrszem" />
             <div class="overlay"></div>
           </div>
           <div class="card-body">
@@ -219,12 +219,12 @@
           <a href="https://vinwiki.com/">
             <div class="card mt-3 mb-3">
               <div class="hovereffect">
-                <img src="https://vinwiki.com/wp-content/uploads/2022/11/homepage-2-new.png" class="card-img-top" style="max-height: 140px; object-fit: cover;" alt="VINwiki" />
+                <img src="https://vinwiki.com/wp-content/uploads/2022/11/homepage-2-new.png" class="card-img-top" style="max-height: 12em; object-fit: cover;" alt="VINwiki" />
                 <div class="overlay"></div>
               </div>
               <div class="card-body">
                 <h5 class="card-title">VINwiki Applikáció</h5>
-                <p class="card-text">Közösségi autótörténetek alvázszám alapján</p>
+                <p class="card-text">Közösségi autótörténetek az autó alvázszáma alapján</p>
               </div>
             </div>
           </a>
@@ -233,12 +233,12 @@
           <a href="https://better-vinwiki.pages.dev">
             <div class="card mt-3 mb-3">
               <div class="hovereffect">
-                <img src="https://vinwiki.com/wp-content/uploads/2022/11/homepage-2-new.png" class="card-img-top" style="max-height: 140px; object-fit: cover;" alt="Better VINwiki" />
+                <img src="https://vinwiki.com/wp-content/uploads/2022/11/homepage-2-new.png" class="card-img-top" style="max-height: 12em; object-fit: cover;" alt="Better VINwiki" />
                 <div class="overlay"></div>
               </div>
               <div class="card-body">
                 <h5 class="card-title">Better VINwiki</h5>
-                <p class="card-text">Alternativ VINwiki weboldal, de a hivatalosnál jobb</p>
+                <p class="card-text">Alternativ VINwiki weboldal, de a hivatalosnál modernebb és jobban működik</p>
               </div>
             </div>
           </a>

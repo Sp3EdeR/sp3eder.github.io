@@ -39,23 +39,30 @@ body {
   box-shadow: inset 0 0 5rem rgba(0, 0, 0, .5);
 }
 
-.cover-container {
-  max-width: 42em;
+
+header {
+  background-image: url('bghead.jpg');
+  background-position: center;
+  background-size: cover;
+  margin-bottom: 1rem;
+  text-align: center;
+  vertical-align: middle;
 }
 
+.cover-container {
+  max-width: 56em;
+  padding: 0 1rem 1rem 1rem;
+}
 
-/*
- * Header
- */
-.masthead {
+.section {
   margin-bottom: 2rem;
 }
 
-.masthead-brand {
+.section-brand {
   margin-bottom: 0;
 }
 
-.nav-masthead .nav-link {
+.nav-section .nav-link {
   padding: .25rem 0;
   font-weight: 700;
   color: rgba(255, 255, 255, .5);
@@ -63,25 +70,25 @@ body {
   border-bottom: .25rem solid transparent;
 }
 
-.nav-masthead .nav-link:hover,
-.nav-masthead .nav-link:focus {
+.nav-section .nav-link:hover,
+.nav-section .nav-link:focus {
   border-bottom-color: rgba(255, 255, 255, .25);
 }
 
-.nav-masthead .nav-link + .nav-link {
+.nav-section .nav-link + .nav-link {
   margin-left: 1rem;
 }
 
-.nav-masthead .active {
+.nav-section .active {
   color: #fff;
   border-bottom-color: #fff;
 }
 
 @media (min-width: 48em) {
-  .masthead-brand {
+  .section-brand {
     float: left;
   }
-  .nav-masthead {
+  .nav-section {
     float: right;
   }
 }
