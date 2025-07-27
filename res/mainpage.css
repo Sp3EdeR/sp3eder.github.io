@@ -45,7 +45,6 @@ header {
   background-image: url('bghead.jpg');
   background-position: center;
   background-size: cover;
-  margin-bottom: 1rem;
   text-align: center;
   vertical-align: middle;
 }
@@ -55,42 +54,9 @@ header {
   padding: 0 1rem 1rem 1rem;
 }
 
-.section {
-  margin-bottom: 2rem;
-}
-
-.section-brand {
-  margin-bottom: 0;
-}
-
-.nav-section .nav-link {
-  padding: .25rem 0;
-  font-weight: 700;
-  color: rgba(255, 255, 255, .5);
-  background-color: transparent;
-  border-bottom: .25rem solid transparent;
-}
-
-.nav-section .nav-link:hover,
-.nav-section .nav-link:focus {
-  border-bottom-color: rgba(255, 255, 255, .25);
-}
-
-.nav-section .nav-link + .nav-link {
-  margin-left: 1rem;
-}
-
-.nav-section .active {
-  color: #fff;
-  border-bottom-color: #fff;
-}
-
 @media (min-width: 48em) {
   .section-brand {
     float: left;
-  }
-  .nav-section {
-    float: right;
   }
 }
 
