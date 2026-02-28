@@ -1,0 +1,23 @@
+<div style="color: var(--bs-body-color)">
+  <div id="toast-android-app" role="alert" aria-live="assertive" aria-atomic="true" class="toast mb-2" data-bs-autohide="false">
+    <div class="toast-header">
+      <strong class="me-auto">Android Alkalmazás</strong>
+      <button type="button" class="btn-close ms-2 mb-1" data-bs-dismiss="toast" aria-label="Close"></button>
+    </div>
+    <div class="toast-body">
+      Elérhető {0} a telefonodra, natív alkalmazásként! Ha ki szeretnéd próbálni,
+      <a href="https://github.com/Sp3EdeR/huroutes-android/releases" target="_blank" rel="noopener noreferrer">innen töltheted le</a>.
+    </div>
+  </div>
+  <div id="toast-app-update" role="alert" aria-live="assertive" aria-atomic="true" class="toast mb-2" data-bs-autohide="false">
+    <div class="toast-header">
+      <strong class="me-auto">Alkalmazás Frissítése</strong>
+      <button type="button" class="btn-close" data-bs-dismiss="toast" aria-label="Close"></button>
+    </div>
+    <div class="toast-body">
+      Elérhető ennek az alkalmazásnak egy új verziója!
+      <a href="#" target="_blank" rel="noopener noreferrer">Innen töltheted le</a> a telepítőjét.
+      Letöltés után kézzel szükséges indítani a fájlt a frissítéshez.
+    </div>
+  </div>
+</div>

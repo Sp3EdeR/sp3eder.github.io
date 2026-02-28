@@ -1,0 +1,56 @@
+#menu {
+  font-family: "Noto Sans","Google Sans",Roboto,Arial,sans-serif;
+}
+
+/* Title formatting */
+#menu .navbar-brand {
+  display: flex;
+  align-items: flex-start;
+}
+#menu .menu-title {
+  display: inline-block;
+  font-variant: small-caps;
+  line-height: 25px;
+}
+
+/* Borderless hamburger */
+#menu .navbar-toggler {
+  --bs-navbar-toggler-focus-width: 0;
+}
+
+/* Narrow offcanvas menu */
+#navbarMenu.offcanvas {
+  --bs-offcanvas-width: max-content;
+}
+
+#menu .nav-item {
+  min-width: 80px;
+}
+
+/* Menu link hover and active effects */
+#menu .nav-link:not(.active) img {
+  transition: filter .2s ease;
+}
+
+#menu .nav-link:not(.active):hover img {
+  filter: brightness(1.2);
+}
+
+#navbarMenu .nav-link.active {
+  background-color: #00000047;
+  outline: 2px solid #00000047;
+}
+
+#navbarMenu .nav-link.active img {
+  filter: brightness(1.1);
+}
+
+/* Menu font sizes */
+#navbarMenu .offcanvas-body > .navbar-nav:first-child {
+  --bs-nav-link-font-size: 18px;
+}
+@media (min-width: 576px) {
+  #navbarMenu .offcanvas-body > .navbar-nav:first-child {
+    --bs-nav-link-font-size: 12px;
+  }
+}

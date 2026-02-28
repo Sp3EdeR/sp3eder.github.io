@@ -1,0 +1,36 @@
+<nav id="menu" class="navbar navbar-expand-sm p-1">
+  <a href="{0}../../" class="navbar-brand py-0">
+    <img src="{0}autosappok.webp" alt="" width="50" height="50"/>
+    <div class="menu-title ms-2">Autós<br>Appok</div>
+  </a>
+  <button class="navbar-toggler border-0" type="button" data-bs-toggle="offcanvas" data-bs-target="#navbarMenu" aria-controls="navbarMenu" aria-expanded="false" aria-label="Menü">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="offcanvas offcanvas-end text-center py-0" tabindex="-1" id="navbarMenu">
+    <div class="offcanvas-header">
+      <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+    </div>
+    <div class="offcanvas-body">
+      <ul class="navbar-nav gap-4 gap-sm-0">
+        <li class="nav-item">
+          <a id="events-tab" class="nav-link py-0 rounded-2" href="{0}../../autosesemenyek/">
+            <img src="{0}autosesemenyek.webp" alt="" width="32" height="32"/>
+            <p class="mb-0">Események</p>
+          </a>
+        </li>
+        <li class="nav-item">
+          <a id="huroutes-tab" class="nav-link py-0 rounded-2" href="{0}../../huroutes/">
+            <img src="{0}huroutes.webp" alt="" width="32" height="32"/>
+            <p class="mb-0">huroutes</p>
+          </a>
+        </li>
+        <li class="nav-item">
+          <a id="photospots-tab" class="nav-link py-0 rounded-2" href="{0}../../autofoto/">
+            <img src="{0}fotopont.webp" alt="" width="32" height="32"/>
+            <p class="mb-0">Fotópontok</p>
+          </a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
