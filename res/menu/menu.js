@@ -23,6 +23,44 @@ let initMenu = () => {};
                 : media.addListener(onChange);
         }
     }
+    function initTooltip(elements) {
+        elements.each((_, elem) => {
+            const inst = bootstrap.Tooltip.getOrCreateInstance(elem, {
+                boundary: 'viewport',
+                placement: 'bottom'
+            });
+            const autoHideEvents = [
+                'pointerdown', 'pointerup', 'pointercancel', 'mousedown', 'mouseup', 'contextmenu',
+                'wheel', 'keydown', 'keyup', 'touchstart', 'touchend', 'touchcancel', 'scroll',
+                'focusin', 'input'
+            ];
+            let autoHideBound = false;
+
+            const autoHideListener = (e) => {
+                if (elem.contains(e.target))
+                    return;
+                inst.hide();
+            };
+
+            const bindAutoHide = () => {
+                if (autoHideBound)
+                    return;
+                autoHideEvents.forEach(type => document.addEventListener(type, autoHideListener, true));
+                autoHideBound = true;
+            };
+
+            const unbindAutoHide = () => {
+                if (!autoHideBound)
+                    return;
+                autoHideEvents.forEach(type => document.removeEventListener(type, autoHideListener, true));
+                autoHideBound = false;
+            };
+
+            elem.addEventListener('shown.bs.tooltip', bindAutoHide);
+            elem.addEventListener('hide.bs.tooltip', unbindAutoHide);
+            elem.addEventListener('hidden.bs.tooltip', unbindAutoHide);
+        });
+    }
     function initMenuFunc(activeTabId, extraMenuItems, options) {
         const format = (str, ...args) =>
             str.replace(/\{(\d+)\}/g, function (_, n) { return args[n]; });
@@ -34,6 +72,7 @@ let initMenu = () => {};
                 menu.find('.offcanvas-body').append(extraMenuItems);
             menu.find('#' + activeTabId).addClass('active').removeAttr('href');
             initColorMode(menu, options);
+            initTooltip(menu.find('[title]'));
             menu.insertAfter(callerNode);
         });
     }
