@@ -78,12 +78,18 @@ let initAppToasts = () => {};
                 const url = data.assets[0].browser_download_url;
                 const ver = data.tag_name.slice(1);
                 const appVer = navigator.userAgent.match(/\bhuroutes\/(\d+(?:\.\d+)*)\b/)[1];
-                if (ver.localeCompare(appVer, undefined, { numeric: true, sensitivity: 'base' }) == 1)
-                {
-                    let androidToast = $('#toast-app-update');
-                    androidToast.find('a[href]').attr('href', url);
-                    androidToast.toast('show');
-                }
+                if (
+                    // Already shown the update message for this version
+                    localStorage.getItem(`${pageName}-shownUpdate-${ver}`) ||
+                    // The latest release is not newer than the app version
+                    ver.localeCompare(appVer, undefined, { numeric: true, sensitivity: 'base' }) != 1)
+                    return;
+
+                let androidToast = $('#toast-app-update');
+                androidToast.toast('show');
+                androidToast.on('hide.bs.toast', () =>
+                    localStorage.setItem(`${pageName}-shownUpdate-${ver}`, true));
+                androidToast.find('a[href]').on('click', () => androidToast.toast('hide'));
             }
             catch
             {
