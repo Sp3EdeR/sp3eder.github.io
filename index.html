@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="hu">
+<html lang="hu" data-bs-theme="dark">
 <head>
   <meta charset="utf-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
@@ -58,19 +58,19 @@
 
   <link href="res/mainpage.css" rel="stylesheet">
 
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" integrity="sha256-+IZRbz1B6ee9mUx/ejmonK+ulIP5A5bLDd6v6NHqXnI=" crossorigin="anonymous" referrerpolicy="no-referrer">
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@forevolve/bootstrap-dark@4.0.2/dist/css/bootstrap-dark.min.css" integrity="sha256-uL9g2qjKkmQ5pUUk+9GC9gBsUBuLpMPkYRR1yePUAoE=" crossorigin="anonymous" referrerpolicy="no-referrer">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" integrity="sha256-2FMn2Zx6PuH5tdBQDRNwrOo60ts5wWPC9R8jK67b3t4=" crossorigin="anonymous" referrerpolicy="no-referrer">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha256-5P1JGBOIxI7FBAvT/mb1fCnI5n/NhQKzNUuW7Hq0fMc=" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
   <script src="https://cdn.jsdelivr.net/npm/jquery@3.7.0/dist/jquery.min.js" integrity="sha256-2Pmvv0kuTBOenSvLm6bvfBSSHrUJ+3A7x6P5Ebd07/g=" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js" integrity="sha256-GRJrh0oydT1CwS36bBeJK/2TggpaUQC6GzTaTQdZm0k=" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <script src="res/mainpage.js"></script>
 </head>
 <body class="text-center">
-  <div class="cover-container w-100 d-flex mx-auto flex-column" style="position: relative;">
-    <header class="card p-3 mt-3 mb-3">
+  <div class="cover-container w-100 d-flex mx-auto flex-column p-3 pt-0" style="position: relative;">
+    <header class="card p-3 my-3">
       <h1>AUTÓS APPOK</h1>
-      Alkalmazások a magyar autós közösségnek: eseménynaptár, szerpentintérkép, fotópontok, és sok más
+      Alkalmazások a magyar autós közösségnek: eseménynaptár, szerpentintérkép, fotópontok, és sok más.
     </header>
     <main role="main" class="inner cover">
-      <div class="col-6 col-md-4 my-md-4">
+      <div class="col-6 col-md-4 my-md-4 px-3">
         <a href="https://play.google.com/store/apps/details?id=hu.speeder.huroutes">
           <div class="card bg-transparent border-0">
             <img src="res/app/getitongoogleplay.svg" class="card-img-top" alt="Letöltés a Google Playről" />
@@ -78,58 +78,58 @@
         </a>
       </div>
       <a href="autosesemenyek">
-        <div class="card mt-3 mb-3">
-          <div class="hovereffect">
+        <div class="card card-hover-effect my-3">
+          <div class="card-head">
             <img src="autosesemenyek/res/banner.jpg" class="card-img-top" alt="Autós Események Naptára" />
             <div class="overlay shadow-lg"></div>
             <div class="overlay overlay-ani"></div>
           </div>
           <div class="card-body">
             <h5 class="card-title">Autós Események Naptára</h5>
-            <p class="card-text">Autós, motoros találkozók, pályanapok, versenyek, börzék gyűjteménye Magyarországról</p>
+            <p class="card-text">Magyarország autós és motoros eseményeinek naptára egy helyen: találkozók, pályanapok, versenyek, börzék. Naprakész gyűjtemény részletekkel, és közösség.</p>
           </div>
         </div>
       </a>
-      <div id="carouselIndicators" class="carousel slide mt-3 mb-3" data-ride="carousel">
-        <ol class="carousel-indicators">
-          <li data-target="#carouselIndicators" data-slide-to="0" class="active"></li>
-        </ol>
+      <div id="calCarousel" class="carousel slide my-3 pb-4">
+        <div class="carousel-indicators bottom-0 mb-0">
+          <button type="button" data-bs-target="#calCarousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Naptárak 1"></button>
+        </div>
         <div class="carousel-inner">
           <div class="carousel-item active">
             <div class="row">
               <div class="col-4">
                 <a href="autosesemenyek/celicaclub">
-                  <div class="card">
-                    <div class="hovereffect">
+                  <div class="card card-hover-effect">
+                    <div class="card-head">
                       <img src="res/logos/celicaclub.jpg" class="card-img-top" alt="Celica club naptár" />
                       <div class="overlay overlay-ani"></div>
                     </div>
-                    <div class="card-body">
+                    <div class="card-body p-2">
                       <h6>Celica Club Naptár</h6>
                     </div>
                   </div>
                 </a>
               </div>
               <div class="col-4">
-                  <div class="card">
-                    <div class="hovereffect">
+                  <div class="card card-hover-effect">
+                    <div class="card-head">
                       <img src="res/logos/blank.jpg" class="card-img-top" alt="" />
                       <div class="overlay shadow-sm"></div>
                       <div class="overlay overlay-ani"></div>
                     </div>
-                    <div class="card-body">
+                    <div class="card-body p-2">
                       <h6>&nbsp;</h6>
                     </div>
                   </div>
               </div>
               <div class="col-4">
-                  <div class="card">
-                    <div class="hovereffect">
+                  <div class="card card-hover-effect">
+                    <div class="card-head">
                       <img src="res/logos/blank.jpg" class="card-img-top" alt="" />
                       <div class="overlay shadow-sm"></div>
                       <div class="overlay overlay-ani"></div>
                     </div>
-                    <div class="card-body">
+                    <div class="card-body p-2">
                       <h6>&nbsp;</h6>
                     </div>
                   </div>
@@ -139,76 +139,76 @@
         </div>
       </div>
       <a href="huroutes">
-        <div class="card mt-3 mb-3">
-          <div class="hovereffect">
+        <div class="card card-hover-effect my-3">
+          <div class="card-head">
             <img src="huroutes/app/banner-dark.jpg" class="card-img-top" alt="huroutes" />
             <div class="overlay overlay-ani"></div>
           </div>
           <div class="card-body">
             <h5 class="card-title">huroutes</h5>
-            <p class="card-text">Magyar utak vezetésre</p>
+            <p class="card-text">Fedezd fel Magyarország legjobb autós és motoros útvonalait! Szerpentinek és tempós szakaszok részletes leírással, értékeléssel, térképpel, navigációval.</p>
           </div>
         </div>
       </a>
       <a href="autofoto">
-        <div class="card mt-3 mb-3">
-          <div class="hovereffect">
+        <div class="card card-hover-effect my-3">
+          <div class="card-head">
             <img src="autofoto/res/banner.jpg" class="card-img-top" alt="Autós Fotópont Gyűjtemény" />
             <div class="overlay shadow-lg"></div>
             <div class="overlay overlay-ani"></div>
           </div>
           <div class="card-body">
             <h5 class="card-title">Autós Fotópont Gyűjtemény</h5>
-            <p class="card-text">Jó helyek Magyarországon, ahol lefényképezheted autódat</p>
+            <p class="card-text">Interaktív térképes gyűjtemény Magyarország legszebb autós és motoros fotózási helyszíneiről, képekkel. Nyílt, közösségi projekt – add hozzá te is a képeid!</p>
           </div>
         </div>
       </a>
     </main>
-    <div class="text-center mt-3 mb-3">
+    <div class="text-center my-3">
       <h3>Hasznos Dokumentumok</h3>
     </div>
     <main role="main" class="inner cover">
-      <div id="carouselIndicators" class="carousel slide mt-3 mb-3" data-ride="carousel">
-        <ol class="carousel-indicators">
-          <li data-target="#carouselIndicators" data-slide-to="0" class="active"></li>
-        </ol>
+      <div id="docCarousel" class="carousel slide my-3 pb-4" data-ride="carousel">
+        <div class="carousel-indicators bottom-0 mb-0">
+          <button type="button" data-bs-target="#docCarousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Dokumentumok 1"></button>
+        </div>
         <div class="carousel-inner">
           <div class="carousel-item active">
             <div class="row">
               <div class="col-4">
                 <a href="cardocs/download/Kipufogó%20Zajmérés.pdf">
-                  <div class="card">
-                    <div class="hovereffect">
+                  <div class="card card-hover-effect">
+                    <div class="card-head">
                       <img src="res/docs/exhaust_measure.jpg" class="card-img-top" alt="huroutes" />
                       <div class="overlay shadow-sm"></div>
                       <div class="overlay overlay-ani"></div>
                     </div>
-                    <div class="card-body">
+                    <div class="card-body p-2">
                       <h6>Kipufogó Zajmérés</h6>
                     </div>
                   </div>
                 </a>
               </div>
               <div class="col-4">
-                  <div class="card">
-                    <div class="hovereffect">
+                  <div class="card card-hover-effect">
+                    <div class="card-head">
                       <img src="res/docs/blank.jpg" class="card-img-top" alt="blank" />
                       <div class="overlay shadow-sm"></div>
                       <div class="overlay overlay-ani"></div>
                     </div>
-                    <div class="card-body">
+                    <div class="card-body p-2">
                       <h6>&nbsp;</h6>
                     </div>
                   </div>
               </div>
               <div class="col-4">
-                  <div class="card">
-                    <div class="hovereffect">
+                  <div class="card card-hover-effect">
+                    <div class="card-head">
                       <img src="res/docs/blank.jpg" class="card-img-top" alt="blank" />
                       <div class="overlay shadow-sm"></div>
                       <div class="overlay overlay-ani"></div>
                     </div>
-                    <div class="card-body">
+                    <div class="card-body p-2">
                       <h6>&nbsp;</h6>
                     </div>
                   </div>
@@ -225,40 +225,82 @@
     </footer>
     <header class="card p-3 mt-5 mb-3">
       <h1>MÁSOK ALKALMAZÁSAI</h1>
-      Itt mások által készített ingyenes autós alkalmazásokat találsz, amiket ajánlunk neked
+      Itt mások által készített ingyenes autós alkalmazásokat találsz, amiket ajánlunk neked.
     </header>
     <main role="main" class="inner cover">
+      <a href="https://autoorszem.hu/">
+        <div class="card card-hover-effect my-3">
+          <div class="card-head">
+            <img src="https://autoorszem.hu/img/ogAutoorszem9.jpg" class="card-img-top" style="background: #834C69; background: linear-gradient(97deg,#4d2e3f 0%, #834c69 12%, #834c69 88%, #4d2e3f 100%); max-height: min(calc(100vw / 2), 20em); object-fit: scale-down;" alt="Autóőrszem" />
+            <div class="overlay overlay-ani"></div>
+            <div class="container-fluid position-absolute bottom-0 p-2" style="height: 5em;">
+              <div class="row h-100">
+                <div class="col d-flex h-100 justify-content-center align-items-center">
+                  <img class="d-block w-auto mw-100 h-100" src="res/app/getitongoogleplay.svg" alt="Szerezd be: Google Play" data-store-link="https://play.google.com/store/apps/details?id=hu.autoorszem.app" role="link" tabindex="0">
+                </div>
+                <div class="col d-flex h-100 justify-content-center align-items-center">
+                  <img class="d-block w-auto mw-100 h-100" src="res/app/downloadfromappstore.svg" alt="Letölthető az App Store-ból" data-store-link="https://apps.apple.com/hu/app/aut%C3%B3%C5%91rszem/id1493140556" role="link" tabindex="0">
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="card-body">
+            <h5 class="card-title">Autóőrszem Applikáció</h5>
+            <p class="card-text">Rendszám alapú üzenetküldő alkalmazás, ha szükséges lenne elérni egy autó tulajdonosát.</p>
+          </div>
+        </div>
+      </a>
       <a href="https://circleofmotorsports.com/">
-        <div class="card mt-3 mb-3">
-          <div class="hovereffect">
+        <div class="card card-hover-effect my-3">
+          <div class="card-head">
             <img src="https://circleofmotorsports.com/images/logo-black-text.png" class="card-img-top p-2" style="background: #000; background: linear-gradient(337deg,#000 0%, #1d1d1d 38%, #000 100%); max-height: min(calc(100vw / 2), 20em); object-fit: scale-down;" alt="Circle of motorsports" />
             <div class="overlay overlay-ani"></div>
           </div>
           <div class="card-body">
             <h5 class="card-title">Circle of Motorsports</h5>
-            <p class="card-text">A motorsport versenyzők, szerelők, szervezők, szolgáltatók és rajongók közösségi oldala</p>
+            <p class="card-text">A motorsport versenyzők, szerelők, szervezők, szolgáltatók és rajongók közösségi oldala.</p>
           </div>
         </div>
       </a>
-      <a href="https://autoorszem.hu/">
-        <div class="card mt-3 mb-3">
-          <div class="hovereffect">
-            <img src="https://autoorszem.hu/img/ogAutoorszem9.jpg" class="card-img-top" style="background: #834C69; background: linear-gradient(97deg,#4d2e3f 0%, #834c69 12%, #834c69 88%, #4d2e3f 100%); max-height: min(calc(100vw / 2), 20em); object-fit: scale-down;" alt="Autóőrszem" />
+      <a href="https://roads.porsche.com/">
+        <div class="card card-hover-effect my-3">
+          <div class="card-head position-relative">
+            <img src="https://roads.porsche.com/wp-content/uploads/2022/11/roads-scenic-routing-app-generator-1024x683.webp" class="card-img-top" style="max-height: min(calc(100vw / 2), 25em); object-fit: cover;" alt="Roads by Porsche" />
             <div class="overlay overlay-ani"></div>
+            <div class="container-fluid position-absolute bottom-0 p-2" style="height: 5em;">
+              <div class="row h-100">
+                <div class="col d-flex h-100 justify-content-center align-items-center">
+                  <img class="d-block w-auto mw-100 h-100" src="res/app/getitongoogleplay.svg" alt="Szerezd be: Google Play" data-store-link="https://play.google.com/store/apps/details?id=com.porsche.roads" role="link" tabindex="0">
+                </div>
+                <div class="col d-flex h-100 justify-content-center align-items-center">
+                  <img class="d-block w-auto mw-100 h-100" src="res/app/downloadfromappstore.svg" alt="Letölthető az App Store-ból" data-store-link="https://apps.apple.com/us/app/roads-by-porsche-route-planner/id1438225964" role="link" tabindex="0">
+                </div>
+              </div>
+            </div>
           </div>
           <div class="card-body">
-            <h5 class="card-title">Autóőrszem Applikáció</h5>
-            <p class="card-text">Rendszám alapú üzenetküldő alkalmazás, hogy elérd az autó tulaját</p>
+            <h5 class="card-title">ROADS by Porsche</h5>
+            <p class="card-text">Útvonal- és túratervező alkalmazás. Csevegj és oszd meg útjaidat és eseményeidet a helyi és tematikus autós közösségekben.</p>
           </div>
         </div>
       </a>
-      <div class="row mt-3 mb-3">
+      <div class="row my-3">
         <div class="col-6">
           <a href="https://vinwiki.com/">
-            <div class="card">
-              <div class="hovereffect">
+            <div class="card card-hover-effect">
+              <div class="card-head">
                 <img src="https://vinwiki.com/wp-content/uploads/2022/11/homepage-2-new.png" class="card-img-top" style="max-height: 12em; object-fit: cover;" alt="VINwiki" />
                 <div class="overlay overlay-ani"></div>
+                <div class="container-fluid position-absolute bottom-0 p-2" style="height: 3em;">
+                  <div class="row h-100">
+                    <div class="col d-flex h-100 justify-content-center align-items-center">
+                      <img class="d-block w-auto mw-100 h-100" src="res/app/getitongoogleplay.svg" alt="Szerezd be: Google Play" data-store-link="https://play.google.com/store/apps/details?id=com.vinwiki.vinwikiapp" role="link" tabindex="0">
+                    </div>
+                    <div class="col d-flex h-100 justify-content-center align-items-center">
+                      <img class="d-block w-auto mw-100 h-100" src="res/app/downloadfromappstore.svg" alt="Letölthető az App Store-ból" data-store-link="https://apps.apple.com/us/app/vinwiki/id1097335368" role="link" tabindex="0">
+                    </div>
+                  </div>
+                </div>
               </div>
               <div class="card-body">
                 <h5 class="card-title">VINwiki Applikáció</h5>
@@ -269,8 +311,8 @@
         </div>
         <div class="col-6">
           <a href="https://better-vinwiki.pages.dev">
-            <div class="card">
-              <div class="hovereffect">
+            <div class="card card-hover-effect">
+              <div class="card-head">
                 <img src="https://vinwiki.com/wp-content/uploads/2022/11/homepage-2-new.png" class="card-img-top" style="max-height: 12em; object-fit: cover;" alt="Better VINwiki" />
                 <div class="overlay overlay-ani"></div>
               </div>
