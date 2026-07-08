@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+  <url>
+    <loc>https://sp3eder.github.io/</loc>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://sp3eder.github.io/autofoto/</loc>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://sp3eder.github.io/autosesemenyek/</loc>
+    <priority>1.0</priority>
+  </url>
+  <url>
+    <loc>https://sp3eder.github.io/autosesemenyek/celicaclub/</loc>
+    <priority>0.2</priority>
+  </url>
+  <url>
+    <loc>https://sp3eder.github.io/huroutes/</loc>
+    <priority>1.0</priority>
+  </url>
+  <url>
+    <loc>https://sp3eder.github.io/cardocs/download/Kipufog%C3%B3%20Zajm%C3%A9r%C3%A9s.pdf</loc>
+    <priority>0.5</priority>
+  </url>
+</urlset>
