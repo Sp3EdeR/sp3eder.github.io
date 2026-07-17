@@ -1,18 +1,18 @@
-function openStoreBadgeLink(event) {
-  const badge = event.target.closest('[data-store-link]');
+function openEmbeddedLink(event) {
+  const element = event.target.closest('[data-href]');
 
-  if (!badge) {
+  if (!element) {
     return false;
   }
 
   event.preventDefault();
   event.stopPropagation();
-  window.location.assign(badge.dataset.storeLink);
+  window.location.assign(element.dataset.href);
   return true;
 }
 
 document.addEventListener('click', function (event) {
-  openStoreBadgeLink(event);
+  openEmbeddedLink(event);
 });
 
 document.addEventListener('keydown', function (event) {
@@ -20,5 +20,5 @@ document.addEventListener('keydown', function (event) {
     return;
   }
 
-  openStoreBadgeLink(event);
+  openEmbeddedLink(event);
 });

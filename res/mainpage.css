@@ -10,6 +10,14 @@ a:hover {
   text-decoration: none !important;
 }
 
+[role="link"] {
+  color: #cdcdff !important;
+  text-decoration: underline !important;
+}
+[role="link"]:hover, [role="link"]:focus {
+  color: #e9e9ff !important;
+}
+
 /* Custom default button */
 .btn-secondary,
 .btn-secondary:hover,
