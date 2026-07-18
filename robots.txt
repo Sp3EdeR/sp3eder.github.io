@@ -1,3 +1,4 @@
 User-agent: *
+Disallow: /autofoto/fullscreen/
 Disallow: /huroutes/linkmaker.html
 Sitemap: https://sp3eder.github.io/sitemap.xml
